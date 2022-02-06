@@ -12,7 +12,7 @@ function Hero() {
             <h3
                 className="text-xl sm:text-1xl lg:text-2xl font-poppins uppercase font-bold tracking-lg py-3">
                 <Typed
-                    strings={[' Front End Developer', ' Wordpress Expert', ' UI/UX Designer']}
+                    strings={['FrontEnd Developer', ' Wordpress Expert', 'Node js Genius']}
                     typeSpeed={50}
                     backSpeed={50}
                     smartBackspace
@@ -22,7 +22,8 @@ function Hero() {
                 End Developer from in Lahore, Pakistan. I’m currently the lead Developer at
                 Onebyte . In my spare time i like working with a few select clients and building
                 my own products.</p>
-            <div className="pt-4 space-x-0 w-full sm:w-auto sm:space-x-8 flex flex-col sm:flex-row sm:justify-center sm:items-center relative z-10">
+            <div
+                className="pt-4 space-x-0 w-full sm:w-auto sm:space-x-8 flex flex-col sm:flex-row sm:justify-center sm:items-center relative z-10">
                 <a
                     href="#"
                     className="bg-fq-dark-blue2 px-12 py-3 block uppercase text-1xl font-semibold w-full mb-4 sm:mb-0 w-full sm:w-auto">
