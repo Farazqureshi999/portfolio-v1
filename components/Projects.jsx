@@ -6,7 +6,7 @@ function Projects() {
     return <div className="section" id="projects">
         <Heading title={title}/>
         <div className="content-inner">
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                 <div className="project-box relative z-10">
                     <div className="project-thumb group">
                         <img src="/images/main.jpg" alt="" className="project-thumb-above"/>
