@@ -10,7 +10,7 @@ function Hero() {
             <h1
                 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-poppins font-extra-bold">FARAZ QURESHI</h1>
             <h3
-                className="text-xl sm:text-1xl lg:text-2xl font-poppins uppercase font-bold tracking-lg py-3">
+                className="text-md sm:text-1xl lg:text-2xl font-poppins uppercase font-bold tracking-lg py-3">
                 <Typed
                     strings={['FrontEnd Developer', ' Wordpress Expert', 'Node js Genius']}
                     typeSpeed={50}
