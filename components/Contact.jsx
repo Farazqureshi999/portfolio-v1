@@ -14,14 +14,14 @@ function Contact() {
                     </p>
                     <form className="relative z-10">
 
-                        <div className="grid grid-cols-2 gap-6">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-6">
                             <div className="mb-4">
                                 <input
                                     type="text"
                                     placeholder="Enter Your Name"
                                     className="bg-fq-dark-blue2 w-full p-4"/>
                             </div>
-                            <div>
+                            <div className="mb-4 sm:mb-0">
                                 <input
                                     type="email"
                                     placeholder="Enter Your Email"
@@ -39,7 +39,7 @@ function Contact() {
 
                         <button
                             type="submit"
-                            className="uppercase font-nunito bg-fq-white text-fq-dark-blue2 font-bold py-2 px-10 mt-4">Submit</button>
+                            className="uppercase font-nunito bg-fq-white text-fq-dark-blue2 font-bold py-2 px-10 mt-4 w-full sm:w-auto">Submit</button>
                     </form>
                 </div>
                 <div className="relative z-10">
