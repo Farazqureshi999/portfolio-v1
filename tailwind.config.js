@@ -28,9 +28,11 @@ module.exports = {
       'lg':'5px'
     },
     container:{
-      padding:'4rem',
+      padding:'2rem',
       center:true,
     }
   },
-  plugins: [],
+  plugins: [
+    
+  ],
 }

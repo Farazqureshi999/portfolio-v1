@@ -57,7 +57,7 @@ export default function Home() {
                     as="font"
                     crossOrigin=""/>
             </Head>
-            <div className="container md:container lg:container xl:container relative">
+            <div className="container  relative">
 
                 <Hero/>
                 <About/>

@@ -6,7 +6,7 @@ function Process() {
     return <div className="section" id="process">
         <Heading title={title}/>
         <div className="content-inner">
-            <div className="grid grid-cols-3 gap-6 place-content-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 place-content-center">
                 <div class="process-box ">
                     <svg
                         width="200"

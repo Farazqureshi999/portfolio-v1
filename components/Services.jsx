@@ -6,7 +6,7 @@ function Services() {
     return <div className="section" id="services">
         <Heading title={title}/>
         <div className="content-inner">
-            <div className="grid grid-cols-3 gap-6 relative z-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
                 <div className="service-card cursor-pointer ">
                     <svg
                         width="60"

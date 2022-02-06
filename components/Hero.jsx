@@ -6,9 +6,9 @@ function Hero() {
     return <div className="h-screen w-full relative">
         <Header/>
         <div className="hero-div text-center flex justify-center flex-col items-center">
-            <h2 className="text-4xl font-bold">Hi! I'm</h2>
-            <h1 className="text-8xl font-poppins font-extra-bold">FARAZ QURESHI</h1>
-            <h3 className="text-2xl font-poppins uppercase font-bold tracking-lg py-3"> I' m  
+            <h2 className="text-xl sm:text-2xl lg:text-4xl font-bold">Hi! I'm</h2>
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-poppins font-extra-bold">FARAZ QURESHI</h1>
+            <h3 className="text-xl sm:text-1xl lg:text-2xl font-poppins uppercase font-bold tracking-lg py-3"> 
             <Typed
                 strings={[' Front End Developer', ' Wordpress Expert', ' UI/UX Designer']}
                 typeSpeed={50}
@@ -17,7 +17,7 @@ function Hero() {
                 loop>
             </Typed>
             </h3>
-            <p className="text-2xl font-semibold py-1">I’m a Front End Developer from in
+            <p className="text-xl sm:text-1xl lg:text-2xl font-semibold py-1">I’m a Front End Developer from in
                 Lahore, Pakistan. I’m currently the lead Developer at Onebyte . In my spare time
                 i like working with a few select clients and building my own products.</p>
             <div className="pt-4 space-x-8 flex justify-center items-center relative z-10">

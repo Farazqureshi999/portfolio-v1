@@ -28,7 +28,7 @@ function Projects() {
                         </div>
                         <p className="font-nunito text-xl mb-6">A web app for visualizing personalized
                             Spotify data. View your top artists, top tracks, recently played tracks.</p>
-                        <ul className="flex items-center space-x-6">
+                        <ul className="flex items-center space-x-2">
                             <li className="project-badge">
                                 React Js
                             </li>
@@ -62,7 +62,7 @@ function Projects() {
                         </div>
                         <p className="font-nunito text-xl mb-6">A web app for visualizing personalized
                             Spotify data. View your top artisits, top tracks, recently played tracks.</p>
-                        <ul className="flex items-center space-x-6">
+                        <ul className="flex items-center space-x-2">
                             <li className="project-badge">
                                 React Js
                             </li>

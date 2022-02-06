@@ -6,7 +6,7 @@ function Contact() {
     return <div className="section" id="contact">
         <Heading title={title}/>
         <div className="content-inner">
-            <div className="grid grid-cols-2 gap-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <div>
                     <p className="text-2xl font-normal mb-8 font-nunito">I’m interested in freelance
                         opportunities – especially ambitious or large projects. However, if you have
@@ -37,7 +37,9 @@ function Contact() {
                                 placeholder="Enter Your Message"></textarea>
                         </div>
 
-                        <button type="submit" className="uppercase font-nunito bg-fq-white text-fq-dark-blue2 font-bold py-2 px-10 mt-4">Submit</button>
+                        <button
+                            type="submit"
+                            className="uppercase font-nunito bg-fq-white text-fq-dark-blue2 font-bold py-2 px-10 mt-4">Submit</button>
                     </form>
                 </div>
                 <div className="relative z-10">

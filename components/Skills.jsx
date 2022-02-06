@@ -6,7 +6,7 @@ function Skills() {
     return <div className="section" id="skills">
         <Heading title={title}/>
         <div className="content-inner">
-            <div className="grid grid-cols-2 gap-16">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
                 <div >
                     <p className="text-2xl font-normal mb-8 font-nunito">I create successful
                         responsive websites that are fast, easy to use, and built with best practices.
