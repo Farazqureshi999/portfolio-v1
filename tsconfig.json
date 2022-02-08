@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/About.jsx", "components/Hero.jsx", "components/Heading.jsx", "components/Header.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/About.jsx", "components/Hero.jsx", "components/Heading.jsx", "components/Header.jsx", "pages/index.jsx"],
   "exclude": ["node_modules"]
 }
