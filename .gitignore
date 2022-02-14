@@ -5,7 +5,7 @@
 /.pnp
 .pnp.js
 
-/projectv1cms/node_modules
+/cmsv1/node_modules
 
 # testing
 /coverage

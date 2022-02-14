@@ -1,10 +1,10 @@
 {
   "root": true,
   "project": {
-    "name": "project-v1-cms"
+    "name": "cmsv1"
   },
   "api": {
-    "projectId": "bniovomm",
+    "projectId": "01hchem4",
     "dataset": "production"
   },
   "plugins": [

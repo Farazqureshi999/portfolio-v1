@@ -1,8 +1,24 @@
 import React from 'react';
 import Heading from './Heading';
+import { useForm } from "react-hook-form";
 
 function Contact() {
     const title = 'Contact Me'
+    
+    const { register, handleSubmit, formState: {
+            errors
+        }} = useForm();
+    const submitContact = data => {
+       fetch('/api/createContact',{
+           method:'POST',
+           body:JSON.stringify(data),
+       }).then(()=>{
+           console.log(data);
+       }).catch(err =>{
+           console.log(err);
+       })
+    };
+    console.log(errors);
     return <div className="section" id="contact">
         <Heading title={title}/>
         <div className="content-inner">
@@ -12,34 +28,41 @@ function Contact() {
                         opportunities – especially ambitious or large projects. However, if you have
                         other request or question, don’t hesitate to use the form.
                     </p>
-                    <form className="relative z-10">
-
+                    <form onSubmit={handleSubmit(submitContact)} className="relative z-10">
+                    <input {...register("created_at")} type="hidden" name="created_at" value={new Date().toISOString()}  />
                         <div className="grid grid-cols-1 sm:grid-cols-2 sm:gap-6">
                             <div className="mb-4">
                                 <input
+                                    {...register("name",{required:'* Name is Required'})}
                                     type="text"
                                     placeholder="Enter Your Name"
-                                    className="bg-fq-dark-blue2 w-full p-4"/>
+                                    className="bg-fq-dark-blue2 w-full p-4"/> 
+                                    <p className='mt-2 text-fq-gray font-bold'>{errors.name?.message}</p>
                             </div>
                             <div className="mb-4 sm:mb-0">
                                 <input
-                                    type="email"
+                                    {...register("email",{required:'* Email is Required'})}
+                                    type="text"
                                     placeholder="Enter Your Email"
                                     className="bg-fq-dark-blue2 w-full p-4"/>
-
+                                       <p className='mt-2 text-fq-gray font-bold'> {errors.email?.message}</p>
                             </div>
                         </div>
                         <div>
                             <textarea
+                                {...register('message',{required:"* Message is Required",minLength:{value:10, message:'Min Length is 10'},maxLength:{value:80,message:'Max Length is 80'}})}
                                 rows="5"
                                 cols="50"
                                 className="bg-fq-dark-blue2 w-full p-4 resize-none"
                                 placeholder="Enter Your Message"></textarea>
+                                <p className='mt-2 text-fq-gray font-bold'> {errors.message?.message}</p>
                         </div>
 
-                        <button
+                        <input
+                            className="cursor-pointer uppercase font-nunito bg-fq-white text-fq-dark-blue2 font-bold py-2 px-10 mt-4 w-full sm:w-auto"
                             type="submit"
-                            className="uppercase font-nunito bg-fq-white text-fq-dark-blue2 font-bold py-2 px-10 mt-4 w-full sm:w-auto">Submit</button>
+                            value="Submit"/>
+
                     </form>
                 </div>
                 <div className="relative z-10">

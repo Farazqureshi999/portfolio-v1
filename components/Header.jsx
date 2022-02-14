@@ -22,7 +22,7 @@ function Header() {
         }
     }
 
-    return <header className=" flex justify-between items-center py-8 relative z-5">
+    return <header className=" flex justify-between items-center py-8 relative z-10">
         <div className="cursor-pointer z-30">
             <Link href="/">
                 <img src="/images/logo.svg" alt="website logo"/>
