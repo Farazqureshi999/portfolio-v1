@@ -8,16 +8,9 @@ import Process from '../components/Process'
 import Projects from '../components/Projects'
 import Contact from '../components/Contact'
 import Splash from '../components/Splash'
+import {sanityClient} from '../sanity';
 
 
-import sanityClient from '@sanity/client'
-
-const config = {
-    dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
-    projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
-    useCdn: process.env.NODE_ENV === 'production',
-    token: process.env.SANITY_API_TOKEN
-};
 
 
 export default function Home({project}) {
@@ -219,8 +212,8 @@ export async function getStaticProps (){
        stack
      }`;
 
-     const client = sanityClient(config);
-     const project = await client.fetch(query);
+    //  const client = sanityClient(config);
+     const project = await sanityClient.fetch(query);
 
      return{
          props:{
