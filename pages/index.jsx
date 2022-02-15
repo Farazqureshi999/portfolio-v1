@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Header from '../components/Header'
 import Particles from 'react-tsparticles'
 import Hero from '../components/Hero'
 import About from '../components/About'
@@ -11,8 +10,18 @@ import Contact from '../components/Contact'
 import Splash from '../components/Splash'
 
 
-export default function Home() {
-   
+import sanityClient from '@sanity/client'
+
+const config = {
+    dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,
+    projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
+    useCdn: process.env.NODE_ENV === 'production',
+    token: process.env.SANITY_API_TOKEN
+};
+
+
+export default function Home({project}) {
+    
     return (
         <Splash>
             <main>
@@ -66,9 +75,10 @@ export default function Home() {
     <Hero/>
     <About/>
     <Skills/>
+    <Projects projects={project}/>
     <Services />
     <Process/>
-    <Projects/>
+
     <Contact />
 </div>
 <Particles
@@ -197,4 +207,24 @@ export default function Home() {
 </main>
         </Splash>
     )
+}
+
+
+export async function getStaticProps (){
+    const query = `*[_type == "portfolio"]{
+        _id,
+       detail,
+       name,
+       projectImg,
+       stack
+     }`;
+
+     const client = sanityClient(config);
+     const project = await client.fetch(query);
+
+     return{
+         props:{
+             project
+         }
+        }
 }

@@ -8,14 +8,14 @@ function Skills() {
         <div className="content-inner">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
                 <div >
-                    <p className="text-2xl font-normal mb-8 font-nunito">I create successful
+                    <p className="text-lg sm:text-1xl lg:text-2xl font-normal mb-4 lg:mb-8 font-nunito">I create successful
                         responsive websites that are fast, easy to use, and built with best practices.
                         The main area of my expertise is front-end development, HTML, CSS, JS, building
                         small and medium web apps, custom plugins, features, animations, and coding
                         interactive layouts.
 
                     </p>
-                    <p className="text-2xl font-normal mb-8 font-nunito">Since beginning my journey
+                    <p className="text-lg sm:text-1xl lg:text-2xl font-normal mb-4 lg:mb-8 font-nunito">Since beginning my journey
                         as a freelance developer nearly 10 years ago, I’ve done remote work for
                         agencies, consulted for startups, and collaborated with talented people to
                         create web products for both business and consumer use.

@@ -18,7 +18,7 @@ function Hero() {
                     smartBackspace
                     loop></Typed>
             </h3>
-            <p className="text-xl sm:text-1xl lg:text-2xl font-semibold py-1">I’m a Front
+            <p className="text-lg sm:text-1xl lg:text-2xl font-semibold py-1">I’m a Front
                 End Developer from in Lahore, Pakistan. I’m currently the lead Developer at
                 Onebyte . In my spare time i like working with a few select clients and building
                 my own products.</p>

@@ -24,7 +24,7 @@ function Contact() {
         <div className="content-inner">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <div>
-                    <p className="text-2xl font-normal mb-8 font-nunito">I’m interested in freelance
+                    <p className="text-lg sm:text-1xl lg:text-2xl font-normal mb-4 lg:mb-8 font-nunito">I’m interested in freelance
                         opportunities – especially ambitious or large projects. However, if you have
                         other request or question, don’t hesitate to use the form.
                     </p>
