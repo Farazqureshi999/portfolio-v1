@@ -19,18 +19,18 @@ function Hero() {
                     loop></Typed>
             </h3>
             <p className="text-lg sm:text-1xl lg:text-2xl font-semibold py-1">I’m a Front
-                End Developer from in Lahore, Pakistan. I’m currently the lead Developer at
+                End Developer from in Lahore, Pakistan. I’m currently the lead wordpress developer at
                 Onebyte . In my spare time i like working with a few select clients and building
                 my own products.</p>
             <div
                 className="pt-4 space-x-0 w-full sm:w-auto sm:space-x-8 flex flex-col sm:flex-row sm:justify-center sm:items-center relative z-10">
                 <a
-                    href="#"
+                    href="#contact"
                     className="bg-fq-dark-blue2 px-12 py-3 block uppercase text-1xl font-semibold w-full mb-4 sm:mb-0 w-full sm:w-auto">
                     Hire Me
                 </a>
                 <a
-                    href="#"
+                    href='/files/cv.pdf' download
                     className="bg-fq-dark-blue1 border border-1 px-6 py-3 block uppercase text-1xl font-semibold w-full sm:w-auto">Download CV</a>
             </div>
         </div>

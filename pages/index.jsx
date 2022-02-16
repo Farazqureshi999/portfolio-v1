@@ -21,7 +21,7 @@ export default function Home({project}) {
 
 <Head>
     <title>FQ - Frontend Developer | Wordpress Expert</title>
-    <link rel="icon" href="/images/Vector.png"/>
+    <link rel="icon" href="/images/favicon.ico"/>
     <link
         rel="preload"
         href="/fonts/Poppins/Poppins-Black.ttf"

@@ -8,7 +8,7 @@ import {urlFor} from '../sanity';
 
 
 function Projects({projects}) {
-    console.log(projects)
+    // console.log(projects)
     const title = 'Featured Projects'
     const settings = {
         dots: true,
@@ -35,7 +35,7 @@ function Projects({projects}) {
             
               <Slider {...settings} className="relative z-10 ">
               {projects.map((project) =>{
-                  console.log('hello')
+                //   console.log('hello')
                  return(
                     <div key={project._id} className="project-box relative z-10 px-5">
                     <div className="project-thumb group">
