@@ -19,7 +19,7 @@ function Process() {
                             fill="white"/>
                     </svg>
                     <h4 class="font-poppins font-bold uppercase text-2xl py-3">1. discover</h4>
-                    <h6 className="font-bold font-nunito text-center">I conduct user research to identify the problem I want to solve</h6>
+                    <h6 className="font-bold font-nunito  text-center">I conduct user research to identify the problem I want to solve</h6>
                 </div>
                 <div class="process-box ">
                     <svg
@@ -85,7 +85,7 @@ function Process() {
                     </svg>
 
                     <h4 class="font-poppins font-bold uppercase text-2xl py-3">4. Implement</h4>
-                    <h6 className="font-bold font-nunito text-center">After designing, I deliver for implementation.</h6>
+                    <h6 className="font-bold font-nunito text-center">After designing, I develop Pixel Perfect & Responsive Product</h6>
                 </div>
                 <div class="process-box">
                     <svg
