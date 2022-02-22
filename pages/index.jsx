@@ -209,6 +209,8 @@ export async function getStaticProps (){
        detail,
        name,
        projectImg,
+       websiteUrl,
+       githubUrl,
        stack
      }`;
 
